@@ -1,11 +1,14 @@
-//scr/main.tsx
+// src/main.tsx
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
-import './index.css'; // Tailwind 또는 전역 CSS 불러오기
+import App from './App.tsx';
+import { RecoilRoot } from 'recoil';
+import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App />
+    <RecoilRoot>
+      <App />
+    </RecoilRoot>
   </React.StrictMode>
 );

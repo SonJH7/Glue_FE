@@ -1,9 +1,2 @@
 /* /scr/index.css */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-* {
-    margin: 0;
-    padding: 0;
-  }
+@import "tailwindcss";
